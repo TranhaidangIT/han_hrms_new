@@ -2,24 +2,41 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\ServiceProvider;
-use Illuminate\Pagination\Paginator;
+use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Illuminate\Support\Facades\Route;
 
-class AppServiceProvider extends ServiceProvider
+class RouteServiceProvider extends ServiceProvider
 {
     /**
-     * Register any application services.
+     * Sau khi login thành công, Laravel sẽ redirect đến đường dẫn này nếu không có intended URL.
      */
-    public function register(): void
-    {
-        //
-    }
+    public const HOME = '/employee/dashboard';
 
-    /**
-     * Bootstrap any application services.
-     */
+    protected $namespace = 'App\Http\Controllers';
+
     public function boot(): void
     {
-        Paginator::useBootstrapFive();
+        parent::boot();
+    }
+
+    public function map(): void
+    {
+        $this->mapWebRoutes();
+        $this->mapApiRoutes();
+    }
+
+    protected function mapWebRoutes(): void
+    {
+        Route::middleware('web')
+             ->namespace($this->namespace)
+             ->group(base_path('routes/web.php'));
+    }
+
+    protected function mapApiRoutes(): void
+    {
+        Route::prefix('api')
+             ->middleware('api')
+             ->namespace($this->namespace)
+             ->group(base_path('routes/api.php'));
     }
 }

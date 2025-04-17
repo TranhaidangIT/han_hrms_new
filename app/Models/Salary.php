@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class Salary
  * 
+ * @property int $id
  * @property string $employee_code
  * @property float|null $minimum_salary
  * @property float|null $salary_coefficient
@@ -27,7 +28,6 @@ use Illuminate\Database\Eloquent\Model;
 class Salary extends Model
 {
 	protected $table = 'salaries';
-	public $incrementing = false;
 	public $timestamps = false;
 
 	protected $casts = [

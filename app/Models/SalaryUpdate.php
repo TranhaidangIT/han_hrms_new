@@ -12,6 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class SalaryUpdate
  * 
+ * @property int $id
  * @property string $employee_code
  * @property float|null $current_salary
  * @property float|null $salary_after_update
@@ -30,7 +31,6 @@ use Illuminate\Database\Eloquent\Model;
 class SalaryUpdate extends Model
 {
 	protected $table = 'salary_updates';
-	public $incrementing = false;
 	public $timestamps = false;
 
 	protected $casts = [

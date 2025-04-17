@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class ForeignLanguage
  * 
+ * @property int $id
  * @property string $employee_code
  * @property string|null $foreign_language_name
  * @property string|null $level
@@ -22,7 +23,6 @@ use Illuminate\Database\Eloquent\Model;
 class ForeignLanguage extends Model
 {
 	protected $table = 'foreign_languages';
-	public $incrementing = false;
 	public $timestamps = false;
 
 	protected $fillable = [

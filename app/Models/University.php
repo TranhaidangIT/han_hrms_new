@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class University
  * 
+ * @property int $id
  * @property string $employee_code
  * @property string|null $university_name
  * @property string|null $training_country
@@ -23,7 +24,6 @@ use Illuminate\Database\Eloquent\Model;
 class University extends Model
 {
 	protected $table = 'universities';
-	public $incrementing = false;
 	public $timestamps = false;
 
 	protected $fillable = [

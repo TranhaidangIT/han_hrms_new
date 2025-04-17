@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class WorkingProcess
  * 
+ * @property int $id
  * @property string $employee_code
  * @property string|null $work_place
  * @property string|null $work_undertake
@@ -23,7 +24,6 @@ use Illuminate\Database\Eloquent\Model;
 class WorkingProcess extends Model
 {
 	protected $table = 'working_processes';
-	public $incrementing = false;
 	public $timestamps = false;
 
 	protected $fillable = [

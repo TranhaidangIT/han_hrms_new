@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class UnitUsed
  * 
+ * @property int $id
  * @property string|null $unit_used_name
  * @property string|null $school_name
  * @property string|null $address
@@ -23,7 +24,6 @@ use Illuminate\Database\Eloquent\Model;
 class UnitUsed extends Model
 {
 	protected $table = 'unit_used';
-	public $incrementing = false;
 	public $timestamps = false;
 
 	protected $fillable = [

@@ -25,7 +25,7 @@ window.addEventListener("load", function () {
         });
     });
 
-    // sự kiện xóa
+    // thay đổi action của form xóa khi vừa tải trang
     const deleteButtons = document.querySelectorAll(".js-btn-del");
     deleteButtons.forEach((button) => {
         const idValue = button.closest("td").getAttribute("data-id");
@@ -34,6 +34,7 @@ window.addEventListener("load", function () {
         form.setAttribute("action", url);
     });
     
+    // thay đổi url của nút sửa khi vừa tải trang
     const editBtn = document.querySelectorAll(".js-btn-edit");
     editBtn.forEach((button) => {
         const idValue = button.closest("td").getAttribute("data-id");

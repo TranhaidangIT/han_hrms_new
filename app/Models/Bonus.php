@@ -12,6 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class Bonus
  * 
+ * @property int $id
  * @property string $employee_code
  * @property Carbon|null $bonus_date
  * @property string|null $reason
@@ -24,7 +25,6 @@ use Illuminate\Database\Eloquent\Model;
 class Bonus extends Model
 {
 	protected $table = 'bonuses';
-	public $incrementing = false;
 	public $timestamps = false;
 
 	protected $casts = [

@@ -1,19 +1,20 @@
 Tổng quan: dự án này là bản build lại bằng Laravel + MySQL của một đề tài khác. Đề tài trước đó được viết bằng Winforms + SQL Server.
 Database đã được convert sang MySQL, giữ nguyên thiết kế như bản gốc
 
-Dùng Tinker để tạo mới account admin trước khi bắt đầu.
+Hướng dẫn: Dùng Tinker để tạo mới account admin trước khi bắt đầu.
 
 Menu của trang admin lưu ở app/config/adminmenu.php
+Tab được cấu hình ở app/config/employeetab.php
 
 ********
 Dựng giao diện trang quản lý thông tin nhân viên
 Thông tin nhân viên gồm có các tab:
-- Thông tin cá nhân (employees + các bảng cha)
-- Thông tin học vấn (education_levels)
-- Trình độ ngoại ngữ (forgein_languages)
+- [Đã xong] Thông tin cá nhân (employees + các bảng cha)
+- [Bỏ qua] Thông tin học vấn (education_levels)
+- [Đã xong] Trình độ ngoại ngữ (forgein_languages)
 - Thông tin hợp đồng (contract + salarie_details)
-- Nghiên cứu khoa học (scientific_research_topics)
-- Công trình khoa học (scientific_works)
+- [Đã xong] Nghiên cứu khoa học (scientific_research_topics)
+- [Đã xong] Công trình khoa học (scientific_works)
 - Đào tạo sau đại học (after_universities)
 - Khen thưởng (bonuses)
 - Kỷ luật (disciplines)

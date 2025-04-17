@@ -12,6 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class SalaryDetail
  * 
+ * @property int $id
  * @property string $employee_code
  * @property float|null $basic_salary
  * @property float|null $social_insurance
@@ -31,7 +32,6 @@ use Illuminate\Database\Eloquent\Model;
 class SalaryDetail extends Model
 {
 	protected $table = 'salary_details';
-	public $incrementing = false;
 	public $timestamps = false;
 
 	protected $casts = [

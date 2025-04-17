@@ -12,6 +12,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class Discipline
  * 
+ * @property int $id
  * @property string $employee_code
  * @property Carbon|null $discipline_date
  * @property string|null $reason
@@ -24,7 +25,6 @@ use Illuminate\Database\Eloquent\Model;
 class Discipline extends Model
 {
 	protected $table = 'disciplines';
-	public $incrementing = false;
 	public $timestamps = false;
 
 	protected $casts = [

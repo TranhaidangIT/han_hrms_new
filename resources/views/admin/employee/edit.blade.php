@@ -26,7 +26,7 @@
                 <x-input :value="$employee->hometown" label="Quê quán" name="hometown" required />
                 <x-input :value="$employee->phone_number" label="Số điện thoại" name="phone_number" required />
                 <x-input :value="$employee->identity_card" label="CMND/CCCD" name="identity_card" />
-                
+
                 <div class="mb-3">
                     <label class="form-label">Giới tính</label>
                     <select class="form-select" name="gender">
@@ -34,10 +34,10 @@
                         <option value="0" {{ $employee->gender == 0 ? 'selected' : '' }}>Nữ</option>
                     </select>
                 </div>
-                
+
                 <x-input :value="$employee->ethnic" label="Dân tộc" name="ethnic" />
             </div>
-            
+
             <div class="col-md-6">
                 <div class="mb-3">
                     <label class="form-label">Ảnh đại diện</label>
@@ -48,7 +48,7 @@
                     @endif
                     <input type="file" class="form-control" name="image" />
                 </div>
-                
+
                 <div class="mb-3">
                     <label class="form-label">Phòng ban</label>
                     <select class="form-select" name="department_code" required>
@@ -59,7 +59,7 @@
                         @endforeach
                     </select>
                 </div>
-                
+
                 <div class="mb-3">
                     <label class="form-label">Vị trí</label>
                     <select class="form-select" name="employee_position_code">
@@ -70,7 +70,7 @@
                         @endforeach
                     </select>
                 </div>
-                
+
                 <div class="mb-3">
                     <label class="form-label">Loại hợp đồng</label>
                     <select class="form-select" name="contract_code">
@@ -81,7 +81,7 @@
                         @endforeach
                     </select>
                 </div>
-                
+
                 <div class="mb-3">
                     <label class="form-label">Chuyên ngành</label>
                     <select class="form-select" name="specialized_code">
@@ -92,7 +92,7 @@
                         @endforeach
                     </select>
                 </div>
-                
+
                 <div class="mb-3">
                     <label class="form-label">Trình độ học vấn</label>
                     <select class="form-select" name="education_level_code">
@@ -103,7 +103,7 @@
                         @endforeach
                     </select>
                 </div>
-                
+
                 <div class="mb-3">
                     <label class="form-label">Trạng thái</label>
                     <select class="form-select" name="status">
@@ -113,7 +113,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="mb-3">
             <input type="submit" class="btn btn-success" value="Cập nhật" />
         </div>

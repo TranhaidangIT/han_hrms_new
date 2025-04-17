@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class ScientificResearchTopic
  * 
+ * @property int $id
  * @property string $employee_code
  * @property string|null $scientific_research_topic_name
  * @property string|null $year_of_begin
@@ -25,7 +26,6 @@ use Illuminate\Database\Eloquent\Model;
 class ScientificResearchTopic extends Model
 {
 	protected $table = 'scientific_research_topics';
-	public $incrementing = false;
 	public $timestamps = false;
 
 	protected $fillable = [

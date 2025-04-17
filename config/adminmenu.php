@@ -41,5 +41,5 @@ return [
                 'route' => 'admin.employee.index',
             ]
         ],
-    ],
+    ]
 ];
